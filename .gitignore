@@ -1,0 +1,15 @@
+/models/*
+!/models/.gitkeep
+
+/llama_cuda/*
+!/llama_cuda/.gitkeep
+
+# Generated MCP runtime files and test output
+/mcps/**/.cache/
+/mcps/**/.runtime/
+/mcps/**/*.log
+/mcps/news/news-test-*.json
+/mcps/news/news-tool-test.jpg
+/mcps/news/link-test-response.json
+/mcps/news/link-model-test.txt
+/mcps/web-search/model-test-response.json

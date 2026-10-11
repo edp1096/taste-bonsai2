@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "news": {
+      "command": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": ["-NoLogo", "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "D:\\llama_cpp\\llama\\mcps\\news\\news-mcp.ps1"],
+      "timeout_ms": 90000
+    }
+  }
+}

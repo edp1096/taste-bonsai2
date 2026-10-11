@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "news": {
+      "command": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": ["-NoLogo", "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "D:\\llama_cpp\\llama\\mcps\\news\\news-mcp.ps1"],
+      "timeout_ms": 90000
+    },
+    "browser": {
+      "command": "C:\\Users\\swshi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+      "args": ["D:\\llama_cpp\\llama\\mcps\\browser\\browser-mcp.mjs"],
+      "timeout_ms": 120000
+    },
+    "web": {
+      "command": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": ["-NoLogo", "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "D:\\llama_cpp\\llama\\mcps\\web-search\\web-search-mcp.ps1"],
+      "timeout_ms": 30000
+    }
+  }
+}

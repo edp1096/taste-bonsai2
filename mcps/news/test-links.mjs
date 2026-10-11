@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import { parseGoogleReply } from './resolve-links.mjs';
+const expected = 'https://example.com/story?a=1&b=2';
+const reply = ")]}'\n\n" + JSON.stringify([['wrb.fr','Fbv4je',JSON.stringify(['garturlres', expected])], ['di',12]]);
+assert.equal(parseGoogleReply(reply), expected);
+assert.equal(parseGoogleReply(")]}'\n\n123\n" + reply.split('\n').at(-1)), expected);
+assert.throws(() => parseGoogleReply(JSON.stringify([['wrb.fr','Fbv4je',null]])), /did not return/);
+assert.throws(() => parseGoogleReply('not a valid response'), /did not return/);
+assert.throws(() => parseGoogleReply(JSON.stringify([['wrb.fr','Fbv4je',JSON.stringify(['garturlres','javascript:alert(1)'])]])), /did not return/);
+console.log('Link response parser tests passed');
