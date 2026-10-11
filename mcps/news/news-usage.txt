@@ -6,7 +6,7 @@ PowerShell에서 D:\llama_cpp\llama 폴더로 이동한 뒤 실행:
   .\mcps\news\start-news.ps1
 
 직접 실행하려면:
-  .\llama-server.exe -m .\Ternary-Bonsai-2-27B-Uncensored-Heretic-PTQ1_0.gguf --host 127.0.0.1 --port 8080 --jinja --mcp-servers-config .\mcps\news\news-mcp.json
+  .\llama_cuda\llama-server.exe -m .\models\Ternary-Bonsai-2-27B-PQ2_0.gguf --host 127.0.0.1 --port 8080 --jinja --mcp-servers-config .\mcps\news\news-mcp.json
 
 이미 8080 포트에 서버가 실행 중이면 기존 서버를 종료한 뒤 실행한다.
 웹 UI: http://127.0.0.1:8080
